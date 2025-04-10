@@ -15,13 +15,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .App-link {
@@ -37,11 +43,18 @@
   }
 }
 
-.logo-img {
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.logo-container svg {
   transition: transform 0.3s ease;
 }
 
-.logo-img:hover {
+.logo-container:hover svg {
   transform: scale(1.1);
 }
 

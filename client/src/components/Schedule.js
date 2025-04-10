@@ -80,18 +80,12 @@ function Schedule() {
     <div className="container">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h3>Optimized Schedule</h3>
-        <div className="btn-group">
+        <div className="view-toggle mb-4">
           <button 
-            className={`btn btn-outline-primary ${viewMode === 'list' ? 'active' : ''}`}
+            className={`btn ${viewMode === 'list' ? 'btn-primary' : 'btn-outline-primary'}`}
             onClick={() => setViewMode('list')}
           >
             List View
-          </button>
-          <button 
-            className={`btn btn-outline-primary ${viewMode === 'calendar' ? 'active' : ''}`}
-            onClick={() => setViewMode('calendar')}
-          >
-            Calendar View
           </button>
         </div>
       </div>

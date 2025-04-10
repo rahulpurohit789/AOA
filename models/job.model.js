@@ -32,8 +32,21 @@ const jobSchema = new Schema({
     },
     category: {
         type: String,
-        enum: ['work', 'personal', 'meeting', 'deadline', 'other'],
-        default: 'work'
+        enum: [
+            'cloud_ops',
+            'cloud_migration',
+            'cloud_maintenance',
+            'cloud_security',
+            'cloud_optimization',
+            'cloud_devops',
+            'cloud_monitoring',
+            'performance_testing',
+            'cloud_governance',
+            'cloud_networking',
+            'cloud_infrastructure',
+            'cloud_devtools'
+        ],
+        default: 'cloud_ops'
     },
     assignedTo: {
         type: String,
